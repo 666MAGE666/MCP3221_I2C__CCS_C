@@ -1,0 +1,54 @@
+
+ROM used:   474/4096 (12%)
+            474/4096 (12%) including unused fragments
+
+            0.7 Average locations per line
+            39.5 Average locations per statement
+
+RAM used:   7/368 (2%) at main() level
+            17/368 (5%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   35    12 100  MCP3221.c
+   12     0   0  MCP3221.h
+  647     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F88.h
+----- -----
+  694    12 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     22   5    1             @delay_ms1
+0     34   7    1             @PUTCHAR_1_
+0     51  11    3             @I2C_READ_1
+ Inline         1             @I2C_WRITE_1
+0    105  22    4    253  2.9  mcp_okuma
+0     57  12    0     86  2.2  MAIN
+0     13   3    0             @const588
+0     88  19    5             @PSTRINGCN7_573
+0    100  21    9             @PRINTF_LU_573
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               2
+    Statements              12
+    Comments                132
+    Volume (V)              418
+    Difficulty (D)          4.4
+    Effort to implement (E) 1825
+    Time to implement (T)   2 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    115
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   470  1574  
+00800-00FFF     0  2048  
+
+
+

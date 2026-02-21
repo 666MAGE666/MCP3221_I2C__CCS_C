@@ -1,0 +1,15 @@
+ÀÄMCP3221
+   ÀÄMAIN  0/57  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@delay_ms1  0/22  Ram=1
+      ÃÄmcp_okuma  0/105  Ram=4
+      ³  ÃÄ@I2C_WRITE_1  (Inline)  Ram=1
+      ³  ÃÄ@I2C_READ_1  0/51  Ram=3
+      ³  ÀÄ@I2C_READ_1  0/51  Ram=3
+      ÃÄ@PSTRINGCN7_573  0/88  Ram=5
+      ³  ÃÄ@PUTCHAR_1_  0/34  Ram=1
+      ³  ÀÄ@PUTCHAR_1_  0/34  Ram=1
+      ÃÄ@PRINTF_LU_573  0/100  Ram=9
+      ³  ÀÄ@PUTCHAR_1_  0/34  Ram=1
+      ÃÄ@PUTCHAR_1_  0/34  Ram=1
+      ÀÄ@PUTCHAR_1_  0/34  Ram=1

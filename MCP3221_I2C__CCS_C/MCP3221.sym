@@ -1,0 +1,87 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+020-021 adc_deger
+022-023 @PRINTF_LU_573.P1
+022-023 mcp_okuma.okunan_deger
+022     @delay_ms1.P1
+022     @PSTRINGCN7_573.P2
+023     @PSTRINGCN7_573.@SCRATCH1
+024     mcp_okuma.msb
+024     @PSTRINGCN7_573.@SCRATCH2
+024     @PRINTF_LU_573.@SCRATCH1
+025     mcp_okuma.lsb
+025     @PSTRINGCN7_573.@SCRATCH3
+025     @PRINTF_LU_573.@SCRATCH2
+026     @I2C_WRITE_1.P1
+026     @I2C_READ_1.P2
+026     @PSTRINGCN7_573.@SCRATCH4
+026     @PRINTF_LU_573.@SCRATCH3
+027     @I2C_READ_1.@SCRATCH1
+027     @PRINTF_LU_573.@SCRATCH4
+028     @I2C_READ_1.@SCRATCH2
+028     @PRINTF_LU_573.@SCRATCH5
+029     @PRINTF_LU_573.@SCRATCH6
+02A     @PRINTF_LU_573.@SCRATCH7
+02B     @PUTCHAR_1_.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const588.call
+000011  @delay_ms1
+000027  @I2C_READ_1
+00005A  mcp_okuma
+00006F  @I2C_WRITE_1
+0000C3  @PUTCHAR_1_
+0000E5  @PSTRINGCN7_573
+00013D  @PRINTF_LU_573
+0001A1  MAIN
+0001A1  @cinit1
+0001B6  @cinit2
+
+Project Directory:
+    C:\Users\ACER\Desktop\PROJE_YEDEKLERI\MCP3221_I2C__CCS_C\
+
+Project Files:
+    MCP3221.c                                               [05-Tem-24 07:55  CRC=86EFC812]
+    MCP3221.h                                               [04-Tem-24 16:54  CRC=75EBBB96]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F88.h [08-Eyl-15 15:14  CRC=9E1F5A67]
+
+Source signature=391A3876
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=5FEC
+
+Units:
+    MCP3221 (main)
+
+Compiler Settings:
+    Processor:      PIC16F88
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   MCP3221.xsym
+    Errors:      MCP3221.err
+    Ext Symbols: MCP3221.esym
+    INHX8:       MCP3221.hex
+    Symbols:     MCP3221.sym
+    List:        MCP3221.lst
+    Debug/COFF:  MCP3221.cof
+    Project:     MCP3221.ccspjt
+    Call Tree:   MCP3221.tre
+    Statistics:  MCP3221.STA
